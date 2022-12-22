@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #374151;
+}
+
+.container{
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#title{
+    text-align: center;
+    font-size: 40px;
+}
+
+#inputText{
+    width: 400px;
+    height: 30px;
+    outline: none;
+    font-size: 18px;
+    vertical-align: middle;
+    background-color: #2f3136;
+    border-radius: 20px;
+    color: aliceblue;
+    border: 1px solid #161617;
+    padding: 2px;
+}
+
+#addToDo{
+    height: 30px;
+    width: 60px;
+    border-radius: 15px;
+    cursor: pointer;
+    outline: none;
+    background-color: #3c3d3f;
+    color: white;
+    text-align: center;
+    border: 2px solid #29d9d5;
+}
+
+#clearToDo{
+    height: 30px;
+    width: 80px;
+    border-radius: 15px;
+    cursor: pointer;
+    outline: none;
+    background-color: #3c3d3f;
+    color: white;
+    text-align: center;
+    border: 2px solid #29d9d5;
+}
+
+.paragraph-style{
+    margin: 0;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.to-dos{
+    width: 550px;
+    height: auto;
+    min-height: 60px;
+    outline: none;
+    font-size: 18px;
+    vertical-align: middle;
+    background-color: #2f3136;
+    border-radius: 20px;
+    color: aliceblue;
+    border: 1px solid #161617;
+    padding: 2px;
+    text-align: center;
+    margin: 20px auto;
+    justify-content: space-between;
+}
+
+.action-buttons{
+    height: 30px;
+    width: 80px;
+    border-radius: 15px;
+    cursor: pointer;
+    outline: none;
+    background-color: #3c3d3f;
+    color: white;
+    border: 2px solid #29d9d5;
+    margin: 5px;
+}
