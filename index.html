@@ -16,7 +16,7 @@
             <input autocomplete="off" type="text" id="inputText" placeholder="Add some stuff..">
             <input type="submit" id="addToDo" value="Add">
             <input type="submit" id="clearToDo" value="Clear All">
-            <select name="todos" id="filteractivity">
+            <select name="todos" id="filteractivity" onchange="onFilter()">
                 <option value="all">All</option>
                 <option value="completed">Completed</option>
                 <option value="uncompleted">Uncompleted</option>
