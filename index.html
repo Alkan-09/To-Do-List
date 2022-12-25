@@ -16,9 +16,16 @@
             <input autocomplete="off" type="text" id="inputText" placeholder="Add some stuff..">
             <input type="submit" id="addToDo" value="Add">
             <input type="submit" id="clearToDo" value="Clear All">
+            <select name="todos" id="filteractivity">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>
+            </select>
         </form>
-        <div class="to-dos" id="toDoContainer">
-            
+        <div class="style-todos">
+            <div class="to-dos" id="toDoContainer">
+                
+            </div>
         </div>
     </div>
     <script src="app.js"></script>
