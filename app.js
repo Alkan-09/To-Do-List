@@ -11,27 +11,62 @@ let filteractivity = document.getElementById("filteractivity");
 //          true;
 //      }
 
+
 function onFilter() {
+
     let filterValue = filteractivity.value;
+    var modelCbs = document.querySelectorAll(".to-dos input[type='checkbox']");
 
     if(filterValue == 'completed') {
-        toDoContainer.childNodes.forEach(element => {
-
-            let check = element.lastChild;
-
-            console.log(check.value)
-
-        });
-
+        getListOfCheckboxes(modelCbs, 'checked');
+      
     }else if(filterValue == 'uncompleted') {
-        for(let i=1; i<toDoContainer.childNodes.length; i++)
-        console.log(i);
-    } else {
-        for(let i=1; i<toDoContainer.childNodes.length; i++)
-        console.log(i);
-    }
-}
+        getListOfCheckboxes(modelCbs, 'unChecked');
 
+    } else {
+        getListOfCheckboxes(modelCbs, 'all');
+    }
+
+
+  }
+  
+  function getListOfCheckboxes(checkboxes, type) {
+
+    if (checkboxes && checkboxes.length > 0) {
+
+        for (var i = 0; i < checkboxes.length; i++) {
+            var cb = checkboxes[i];
+      
+            cb.parentElement.style.display = "block";
+
+          }
+
+
+        if(type == 'checked') {
+            for (var i = 0; i < checkboxes.length; i++) {
+                var cb = checkboxes[i];
+          
+                if (!cb.checked) {
+                    cb.parentElement.style.display = "none";
+                }
+              }
+        }
+    
+        if(type == 'unChecked')
+        {
+            for (var i = 0; i < checkboxes.length; i++) {
+                var cb = checkboxes[i];
+          
+                if (cb.checked) {
+                    cb.parentElement.style.display = "none";
+                }
+              }
+        }
+
+    }
+  
+  }
+  
 
 addToDoButton.addEventListener("click", function(){
 
